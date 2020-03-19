@@ -205,6 +205,9 @@ starship() {
 
   tar xvf starship-x86_64-unknown-linux-gnu.tar.gz
   check_exit_status
+  
+  sudo mv starship /usr/local/bin/
+  check_exit_status
 
   echo "starship init fish | source" | sudo tee ~/.config/fish/config.fish
 }
