@@ -210,6 +210,7 @@ starship() {
   check_exit_status
 
   echo "starship init fish | source" | sudo tee ~/.config/fish/config.fish
+  check_exit_status
 }
 
 leave() {
