@@ -182,7 +182,7 @@ setup() {
   abbr -a -U -- .stop 'docker stop (docker ps -a -q)'
   abbr -a -U -- .up 'docker-compose up -d'
   abbr -a -U -- .update 'sudo apt update'
-  abbr -a -U -- .upgrade 'sudo apt upgrade'
+  abbr -a -U -- .upgrade 'sudo apt upgrade -y'
   abbr -a -U -- dprune 'docker image prune -a'
   abbr -a -U -- dps 'docker ps -a'
   abbr -a -U -- drm 'docker rm'
