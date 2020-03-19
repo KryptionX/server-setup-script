@@ -154,6 +154,10 @@ progress() {
   cd progress
   sudo make && sudo make install
   check_exit_status
+  
+  cd ../
+  sudo rm -rf progress/
+  check_exit_status
 
 }
 
