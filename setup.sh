@@ -198,10 +198,15 @@ starship() {
   echo
 
   sudo apt install fonts-firacode
+  check_exit_status
 
-  curl -fsSL https://starship.rs/install.sh | bash
+  wget -q --show-progress https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz
+  check_exit_status
 
-  echo "starship init fish | source" >>~/.config/fish/config.fish
+  tar xvf starship-x86_64-unknown-linux-gnu.tar.gz
+  check_exit_status
+
+  echo "starship init fish | source" | sudo tee ~/.config/fish/config.fish
 }
 
 leave() {
