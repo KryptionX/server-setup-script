@@ -163,11 +163,6 @@ setup() {
   echo "setup"
   echo
 
-  sudo useradd johnny
-
-  sudo passwd -d johnny
-  check_exit_status
-
   echo /usr/bin/fish | sudo tee -a /etc/shells
   check_exit_status
 
